@@ -1,0 +1,14 @@
+C:\Users\antho\Desktop\projet\projet\Persistance\bin\Debug\Persistance.dll
+C:\Users\antho\Desktop\projet\projet\Persistance\bin\Debug\Persistance.pdb
+C:\Users\antho\Desktop\projet\projet\Persistance\bin\Debug\métier.dll
+C:\Users\antho\Desktop\projet\projet\Persistance\bin\Debug\métier.pdb
+C:\Users\antho\Desktop\projet\projet\Persistance\obj\Debug\Persistance.csprojResolveAssemblyReference.cache
+C:\Users\antho\Desktop\projet\projet\Persistance\obj\Debug\Persistance.dll
+C:\Users\antho\Desktop\projet\projet\Persistance\obj\Debug\Persistance.pdb
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\bin\Debug\Persistance.dll
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\bin\Debug\Persistance.pdb
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\bin\Debug\métier.dll
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\bin\Debug\métier.pdb
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\obj\Debug\Persistance.csprojResolveAssemblyReference.cache
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\obj\Debug\Persistance.dll
+C:\Users\BASTIEN\Desktop\JectPro\projet\Persistance\obj\Debug\Persistance.pdb

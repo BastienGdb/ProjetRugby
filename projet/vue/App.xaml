@@ -1,0 +1,116 @@
+﻿<Application x:Class="vue.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    
+    
+    <Application.Resources>
+        <DataTemplate x:Key="compet">
+            <TextBlock Text="{Binding Nom}" Foreground="BurlyWood" FontSize="15"/>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="Nomcompet">
+            <TextBlock Text="{Binding Nom}" Foreground="BurlyWood" FontSize="15"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="equipe">
+             <TextBlock Text="{Binding Nom}" Foreground="BurlyWood" FontSize="15"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="poule">
+            <TextBlock Text="{Binding Nom}" Foreground="BurlyWood" FontSize="15"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="joueur">
+            <TextBlock Text="{Binding  Nom}" Foreground="BurlyWood" FontSize="15"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="calendrierEquipe">
+
+            <TextBlock  Foreground="BurlyWood" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{} Journée {2} : {0} - {1}   ">
+                        <Binding Path="EquipeA.Nom"/>
+                        <Binding Path="EquipeB.Nom"/>
+                        <Binding Path="Journée"/>
+                        
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+
+        <DataTemplate x:Key="resultatsEquipe">
+            <TextBlock  Foreground="BurlyWood" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{} Journée {0}   : {1} {3} - {4} {2}   ">
+                        <Binding Path="Journée"/>
+                        <Binding Path="EquipeA.Nom"/>
+                        <Binding Path="EquipeB.Nom"/>
+                        <Binding Path="ScoreA"/>
+                        <Binding Path="ScoreB"/>
+
+
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="palmaresEquipe">
+            <TextBlock Foreground="AliceBlue" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0} Vainqueur du {1} qui est le trophé de {2}">
+                        <Binding Path="Date"/>
+                        <Binding Path="NomTrophe"/>
+                        <Binding Path="NomCompet.Nom"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            
+        </DataTemplate>
+
+        <DataTemplate x:Key="historiqueCompet">
+            <TextBlock Foreground="AliceBlue" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat= " {0}     {1} a remporté {2}">
+                        <Binding Path="Date"/>
+                        <Binding Path="EquipeGagnante.Nom"/>
+                        <Binding Path="NomTrophe"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+
+        <DataTemplate x:Key="calendrierCompet">
+            <TextBlock  Foreground="BurlyWood" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{} Journée {2} : {0} - {1}   ">
+                        <Binding Path="EquipeA.Nom"/>
+                        <Binding Path="EquipeB.Nom"/>
+                        <Binding Path="Journée"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="classement">
+
+            <TextBlock  Foreground="BurlyWood" FontSize="15">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat=" {0} {1}">
+                        <Binding Path="Equipe.Nom"/>
+                        <Binding Path="Points"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+        <Style x:Key="stylePourBouton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#FF2DADCE"/>
+            <Setter Property="BorderBrush" Value="#FF6E1C76"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="OpacityMask" Value="#FF644343"/>
+     
+        </Style>
+    </Application.Resources>
+</Application>

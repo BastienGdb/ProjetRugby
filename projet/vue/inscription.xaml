@@ -1,0 +1,67 @@
+﻿<Window x:Class="vue.Inscription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vue"
+        mc:Ignorable="d"
+         Title="Rugbyscope" Height="550" Width="925">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF2B0A29" Offset="1"/>
+            <GradientStop Color="#FF2DC2E4"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Width="Auto" Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock  Grid.Column="1" x:Name="textBlock" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="60" HorizontalAlignment="Center" Foreground="#FFA02E91" Text="Rugbyscope" Height="Auto" Width="Auto"/>
+            <Button  Grid.Column="0" Content="Accueil" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Background="#FF2DADCE" BorderBrush="#FF6E1C76" BorderThickness="1" OpacityMask="#FF644343" Click="Button_Click_Accueil" Height="Auto"/>
+        </Grid>
+        
+
+        <Grid  Name="mGridCentre">
+            <StackPanel VerticalAlignment="Top" Margin="100" Height="Auto" >
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1" Text="Login :" Height="24" Width="58"/>
+                    <TextBox x:Name="login"  Width="120" Height="20"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy" Width="104" Text="Mot de passe :"/>
+                    <PasswordBox x:Name="password"  Width="120" Height="20"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy1" Height="24" Width="104" Text="Confirmation :"/>
+                    <PasswordBox x:Name="password2"  Width="120" Height="20"/>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy2" Text="Sexe :" Height="24" Width="58"/>
+                    <ComboBox Name="sex" Width="100" Height="22">
+                        <TextBlock Text="Homme"/>
+                        <TextBlock Text="Femme"/>
+
+                    </ComboBox>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy3" Text="Equipe favorite :" Height="25" Width="104"/>
+                    <ComboBox x:Name="comboboxequipe" Width="100" Height="22" 
+                              ItemsSource="{Binding AllEquipeROC}" ItemTemplate="{StaticResource equipe}">
+
+                    </ComboBox>
+                </WrapPanel>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy4" Text="Equipe nationale favorite :" Height="25" Width="151"/>
+                    <ComboBox x:Name="comboboxequipenat"  Width="120" Height="22"
+                              ItemsSource="{Binding EquipeNatROC}" ItemTemplate="{StaticResource equipe}">
+
+                    </ComboBox>
+                </WrapPanel>
+            </StackPanel>
+            <Button x:Name="button" Content="Valider" Width="85" Height="25" Click="validerinscription" VerticalAlignment="Bottom" />
+        </Grid>
+    </DockPanel>
+</Window>

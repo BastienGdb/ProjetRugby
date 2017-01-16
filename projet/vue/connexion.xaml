@@ -1,0 +1,57 @@
+﻿<Window x:Class="vue.connexion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vue"
+        mc:Ignorable="d"
+        Title="Rugbyscope" Height="550" Width="925">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF2B0A29" Offset="1"/>
+            <GradientStop Color="#FF2DC2E4"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Width="Auto" Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock  Grid.Column="1" x:Name="textBlock" VerticalAlignment="Center" FontSize="60" HorizontalAlignment="Center" Foreground="#FFA02E91" Text="Rugbyscope" Height="Auto" Width="Auto"/>
+            <Button  Grid.Column="0" Content="Accueil" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Background="#FF2DADCE" BorderBrush="#FF6E1C76" BorderThickness="1" OpacityMask="#FF644343" Click="Button_Click_Accueil" Height="Auto"/>
+        </Grid>
+
+        <Grid Name="mGridCentre">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1" VerticalAlignment="Top" Text="Login :" Height="24" Width="58"/>
+                    <TextBox x:Name="login"  VerticalAlignment="Top" Width="120" Height="20"/>
+                </WrapPanel>
+                
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock1_Copy"  Height="24" Width="104" Text="Mot de passe"/>
+                    <PasswordBox x:Name="mdp"  Width="120" Height="20"/>
+                </WrapPanel>
+                
+                <WrapPanel HorizontalAlignment="Center">
+                    <Button x:Name="button" Content="Connecter"  Width="85" Height="25" Click="seconnecter"/>
+                </WrapPanel>
+                
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock x:Name="textBlock2" Text="Pas de Compte?  " Foreground="Black"/>
+                    <TextBlock x:Name="hyperlink" >
+                         <Hyperlink Click="inscription" Foreground="#FFA02E91">
+                            <Run Text="Inscrivez vous ici "/>
+                         </Hyperlink>
+                    </TextBlock>
+
+                </WrapPanel>
+                
+            </StackPanel>
+            
+        </Grid>
+    </DockPanel>
+</Window>

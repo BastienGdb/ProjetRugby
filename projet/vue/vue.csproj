@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E150D19A-1B44-4FC0-96BB-90EE49245674}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>projet</RootNamespace>
+    <AssemblyName>projet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AccueilModerateur.xaml.cs">
+      <DependentUpon>AccueilModerateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="competition.xaml.cs">
+      <DependentUpon>competition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="connexion.xaml.cs">
+      <DependentUpon>connexion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationCompetition.xaml.cs">
+      <DependentUpon>CreationCompetition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationEquipe.xaml.cs">
+      <DependentUpon>CreationEquipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationJoueur.xaml.cs">
+      <DependentUpon>CreationJoueur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreationTrophes.xaml.cs">
+      <DependentUpon>CreationTrophes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CréationMatch.xaml.cs">
+      <DependentUpon>CréationMatch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailUserControlFactory.cs" />
+    <Compile Include="inscription.xaml.cs">
+      <DependentUpon>inscription.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LectureHymne.xaml.cs">
+      <DependentUpon>LectureHymne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationCompetitionPouleUnique.xaml.cs">
+      <DependentUpon>ModificationCompetitionPouleUnique.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModificationCompétitionAPoule.xaml.cs">
+      <DependentUpon>ModificationCompétitionAPoule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Palmares.xaml.cs">
+      <DependentUpon>Palmares.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="profil.xaml.cs">
+      <DependentUpon>profil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCCalendrierCompetition.xaml.cs">
+      <DependentUpon>UCCalendrierCompetition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCClassement.xaml.cs">
+      <DependentUpon>UCClassement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistoriqueCompetition.xaml.cs">
+      <DependentUpon>UCHistoriqueCompetition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCResultatEquipe.xaml.cs">
+      <DependentUpon>UCResultatEquipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCCalendrierEquipe.xaml.cs">
+      <DependentUpon>UCCalendrierEquipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCCompetitionAPoule.xaml.cs">
+      <DependentUpon>UCCompetitionAPoule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCEquipe.xaml.cs">
+      <DependentUpon>UCEquipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCJoueur.xaml.cs">
+      <DependentUpon>UCJoueur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCPalmares.xaml.cs">
+      <DependentUpon>UCPalmares.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UCResultatsCompetition.xaml.cs">
+      <DependentUpon>UCResultatsCompetition.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Accueil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AccueilModerateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="competition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="connexion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationCompetition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationEquipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationJoueur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreationTrophes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CréationMatch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="inscription.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LectureHymne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Accueil.xaml.cs">
+      <DependentUpon>Accueil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ModificationCompetitionPouleUnique.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ModificationCompétitionAPoule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Palmares.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="profil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UCCalendrierCompetition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCClassement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCHistoriqueCompetition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCResultatEquipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCCalendrierEquipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCCompetitionAPoule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCEquipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCJoueur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCPalmares.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UCResultatsCompetition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rugby1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hcup.png" />
+    <Resource Include="Images\proD2.png" />
+    <Resource Include="Images\rugby.png" />
+    <Resource Include="Images\top14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rugby2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rugby3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rugby4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logotop14\agen.png" />
+    <Resource Include="Images\logotop14\ASM.png" />
+    <Resource Include="Images\logotop14\bordeaux.png" />
+    <Resource Include="Images\logotop14\brive.png" />
+    <Resource Include="Images\logotop14\castres.png" />
+    <Resource Include="Images\logotop14\laRochelle.png" />
+    <Resource Include="Images\logotop14\oyonnax.png" />
+    <Resource Include="Images\logotop14\Pau.png" />
+    <Resource Include="Images\logotop14\racing.png" />
+    <Resource Include="Images\logotop14\StadeFrançais.png" />
+    <Resource Include="Images\logotop14\Toulon.png" />
+    <Resource Include="Images\logotop14\Toulouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logotop14\grenoble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logotop14\montpellier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\métier\métier.csproj">
+      <Project>{d2a6601a-8af2-4a4c-bd56-1366149841df}</Project>
+      <Name>métier</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistance\Persistance.csproj">
+      <Project>{d91cc53f-64a4-4510-9398-77409bb0e894}</Project>
+      <Name>Persistance</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logoprod2\aix.png" />
+    <Resource Include="Images\logoprod2\albi.png" />
+    <Resource Include="Images\logoprod2\aurillac.png" />
+    <Resource Include="Images\logoprod2\bayonne.png" />
+    <Resource Include="Images\logoprod2\biarritz.png" />
+    <Resource Include="Images\logoprod2\bourgoin.png" />
+    <Resource Include="Images\logoprod2\béziers.png" />
+    <Resource Include="Images\logoprod2\carcassone.png" />
+    <Resource Include="Images\logoprod2\colomiers.png" />
+    <Resource Include="Images\logoprod2\dax.png" />
+    <Resource Include="Images\logoprod2\lyon.png" />
+    <Resource Include="Images\logoprod2\montauban.png" />
+    <Resource Include="Images\logoprod2\montdemarsan.png" />
+    <Resource Include="Images\logoprod2\narbonne.png" />
+    <Resource Include="Images\logoprod2\perpignan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\joueur\Mitchell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\joueur\inconnue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\joueur\Fofana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\CoupeDuMonde.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

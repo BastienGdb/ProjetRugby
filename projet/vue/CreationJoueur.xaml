@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="vue.CreationJoueur"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="449" d:DesignWidth="739">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nom :" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="0"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Prenom : " Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="1"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="poids" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="2"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="taille :" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="3"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Photo :" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="4"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nationalité" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="5"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nombre de sélection" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="6"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Equipe Actuelle" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="7"/>
+            <TextBlock  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Poste :" Height="Auto" Width="Auto" Grid.Column="0" Grid.Row="8"/>
+
+            <TextBox x:Name="nom"  Width="200" Height="25" Grid.Column="1" Grid.Row="0"/>
+            <TextBox x:Name="prenom"  Width="200" Height="25" Grid.Column="1" Grid.Row="1"/>
+
+            <TextBox x:Name="poids"  Width="200" Height="25" Grid.Column="1" Grid.Row="2"/>
+
+
+            <TextBox x:Name="taille"  Width="200" Height="25" Grid.Column="1" Grid.Row="3"/>
+            <Button Content="Parcourrir" Width="75" Height="25" Grid.Row="4" Grid.Column="1" />
+
+            <ComboBox Name="Nationalité" Width="Auto" Height="25" Grid.Column="1" Grid.Row="5">
+
+            </ComboBox>
+
+            <TextBox x:Name="nbSelec"  Width="200" Height="25" Grid.Column="1" Grid.Row="6"/>
+
+
+            <ComboBox Name="equipeActuelle" Width="Auto" Height="25" Grid.Column="1" Grid.Row="7">
+
+            </ComboBox>
+
+            <ComboBox Name="Poste" Width="Auto" Height="25" Grid.Column="1" Grid.Row="8">
+               
+            </ComboBox>
+            
+            <Button Content="retour" Style="{StaticResource stylePourBouton}" Height="24" Width="50" Grid.Row="9" Click="retour"/>
+            <Button Content="Valider" Width="75" Height="25" Grid.Row="9" Grid.Column="1" Style="{StaticResource stylePourBouton}"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

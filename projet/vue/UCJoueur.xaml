@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="vue.UCJoueur"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vue"
+             mc:Ignorable="d" 
+             xmlns:métier="clr-namespace:métier;assembly=métier"
+             d:DesignHeight="449" d:DesignWidth="732">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition >
+            <RowDefinition></RowDefinition >
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Nom :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Prénom :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Nationalité :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Poids :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Taille :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Selection :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Poste :" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock Text="Equipe Actuelle :" Foreground="BurlyWood" FontSize="20"/>
+
+            </StackPanel>
+            <StackPanel Margin="100,0,0,0">
+                <TextBlock x:Name="nom" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="prenom" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="Nationalite" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="poid" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="taille" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="selection" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="poste" Foreground="BurlyWood" FontSize="20"/>
+                <TextBlock x:Name="equipeActuelle" Foreground="BurlyWood" FontSize="20"/>
+            </StackPanel>
+        </WrapPanel>
+        <Button  Style="{StaticResource stylePourBouton}" Grid.Row="2" Content="Retour"  Height="20"  Width="75" DockPanel.Dock="Bottom" HorizontalAlignment="Center" Click="retour" />
+
+    </Grid>
+</UserControl>

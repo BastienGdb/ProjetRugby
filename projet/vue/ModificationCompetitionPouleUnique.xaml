@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="vue.ModificationCompetitionPouleUnique"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vue"
+             mc:Ignorable="d" 
+             d:DesignHeight="449" d:DesignWidth="739">
+    <Grid>
+        <StackPanel>
+            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock  Text="Selectionner Une équipe à supprimer" Height="25" Width="Auto"/>
+                <ComboBox x:Name="comboboxEquipe"  Width="100" Height="25" Margin="100,0,0,0"
+                    ItemsSource="{Binding EquipeCompetROC}" ItemTemplate="{StaticResource equipe}">
+                </ComboBox>
+                <Button Content="valider" Style="{StaticResource stylePourBouton}" Height="24" Width="50" Margin="50" Click="SupprimerEquipe"/>
+
+            </WrapPanel>
+            <TextBlock Text="Ou" HorizontalAlignment="Center"/>
+            <Button Content="Ajouter Une Equipe" Style="{StaticResource stylePourBouton}"  Width="150" Margin="0,50" Click="AjouterEquipe"/>
+        </StackPanel>
+        <Button Content="retour" Style="{StaticResource stylePourBouton}" Height="24" Width="50" VerticalAlignment="Bottom" Margin="0,0,0,25" Click="retour"/>
+
+    </Grid>
+</UserControl>

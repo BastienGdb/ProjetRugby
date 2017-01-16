@@ -1,0 +1,5 @@
+C:\Users\BASTIEN\Desktop\JectPro\projet\métier\obj\Debug\métier.csprojResolveAssemblyReference.cache
+C:\Users\BASTIEN\Desktop\JectPro\projet\métier\bin\Debug\métier.dll
+C:\Users\BASTIEN\Desktop\JectPro\projet\métier\bin\Debug\métier.pdb
+C:\Users\BASTIEN\Desktop\JectPro\projet\métier\obj\Debug\métier.dll
+C:\Users\BASTIEN\Desktop\JectPro\projet\métier\obj\Debug\métier.pdb
